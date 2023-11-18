@@ -1,4 +1,4 @@
-## Install Homebrew
+## Homebrew
 1. Install brew:
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -29,4 +29,11 @@ brew install --cask pgadmin4
 brew install --cask arduino-ide
 brew install --cask mongodb-compass
 brew install --cask docker
+brew install --cask iterm2
+```
+
+## Oh My Zsh
+1. Install with curl:
+```bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
