@@ -28,4 +28,5 @@ brew install --cask db-browser-for-sqlite
 brew install --cask pgadmin4
 brew install --cask arduino-ide
 brew install --cask mongodb-compass
+brew install --cask docker
 ```
