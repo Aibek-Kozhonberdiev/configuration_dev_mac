@@ -37,3 +37,41 @@ brew install --cask iterm2
 ```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
+2. Powerlevel10k
+```bash
+git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+```
+3. Syntax highlighting
+```bash
+brew install zsh-syntax-highlighting
+```
+4. Git
+```bash
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
+5. Settings ~/.zshrc:
+```~/.zshrc
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
+export PATH=$PATH:/usr/local/Cellar/libpq/15.3_1/bin
+
+export ZSH="$HOME/.oh-my-zsh"
+export PATH="/usr/local/Cellar/libpq/15.4/bin:$PATH"
+
+ZSH_THEME="powerlevel10k/powerlevel10k"
+
+plugins=(git
+zsh-autosuggestions
+)
+
+source $ZSH/oh-my-zsh.sh
+
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+source /Users/<user>/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+```
+6. Visual Studio Code
+```json
+"terminal.integrated.fontFamily": "MesloLGS NF"
+```
