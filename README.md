@@ -69,7 +69,7 @@ zsh-autosuggestions
 source $ZSH/oh-my-zsh.sh
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-source /Users/<user>/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 ```
 6. Visual Studio Code
 ```json
