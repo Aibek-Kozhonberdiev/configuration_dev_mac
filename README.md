@@ -16,6 +16,7 @@ brew install mongodb
 brew install postgresql
 brew install mysql
 brew install neofetch
+brew install redis
 ```
 2. Install cask applications:
 ```bash
