@@ -12,11 +12,11 @@ brew update
 1. Install the following command-line tools:
 ```bash
 brew install tree
-brew install mongodb
-brew install postgresql
-brew install mysql
+brew install mongodb-community@7.0
+brew install postgresql@15
+brew install mysql@8.0
 brew install neofetch
-brew install redis
+brew install redis@7.2
 ```
 2. Install cask applications:
 ```bash
@@ -27,7 +27,6 @@ brew install --cask tor-browser
 brew install --cask postman
 brew install --cask db-browser-for-sqlite
 brew install --cask pgadmin4
-brew install --cask arduino-ide
 brew install --cask mongodb-compass
 brew install --cask docker
 brew install --cask iterm2
