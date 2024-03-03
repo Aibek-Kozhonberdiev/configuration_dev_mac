@@ -16,12 +16,12 @@ brew install mongodb-community@7.0
 brew install postgresql@15
 brew install mysql@8.0
 brew install neofetch
-brew install redis@7.2
+brew install node
 ```
 2. Install cask applications:
 ```bash
 brew install --cask visual-studio-code
-brew install --cask pycharm-ce-with-anaconda-plugin
+brew install --cask pycharm-ce
 brew install --cask google-chrome
 brew install --cask tor-browser
 brew install --cask postman
@@ -55,15 +55,18 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-export PATH=$PATH:/usr/local/Cellar/libpq/15.3_1/bin
-
 export ZSH="$HOME/.oh-my-zsh"
-export PATH="/usr/local/Cellar/libpq/15.4/bin:$PATH"
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
-plugins=(git
+plugins=(
+git
 zsh-autosuggestions
+python
+pip
+docker
+docker-compose
+npm
 )
 
 source $ZSH/oh-my-zsh.sh
