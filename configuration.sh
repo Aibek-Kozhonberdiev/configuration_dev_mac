@@ -11,6 +11,7 @@ brew install zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 # Add settings to ~/.zshrc
+zsh_syntax_highlighting=$(find /Users -name 'zsh-syntax-highlighting.zsh')
 touch ~/.zshrc
 cat <<EOF >> ~/.zshrc
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
@@ -34,6 +35,7 @@ npm
 source $ZSH/oh-my-zsh.sh
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+source $zsh_syntax_highlighting
 EOF
 
 # Install basic tools
