@@ -45,6 +45,7 @@ brew install postgresql@15
 brew install mysql@8.0
 brew install neofetch
 brew install node
+brew install nvim
 
 # Install development tools and applications
 brew install --cask visual-studio-code
@@ -56,3 +57,4 @@ brew install --cask db-browser-for-sqlite
 brew install --cask pgadmin4
 brew install --cask mongodb-compass
 brew install --cask docker
+brew install --cask firefox
