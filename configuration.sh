@@ -58,3 +58,4 @@ brew install --cask pgadmin4
 brew install --cask mongodb-compass
 brew install --cask docker
 brew install --cask firefox
+brew install --cask discord
