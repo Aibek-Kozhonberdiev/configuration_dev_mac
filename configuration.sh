@@ -64,7 +64,6 @@ brew install python@3.12
 brew install --cask visual-studio-code
 brew install --cask pycharm-ce
 brew install --cask google-chrome
-brew install --cask tor-browser
 brew install --cask postman
 brew install --cask db-browser-for-sqlite
 brew install --cask pgadmin4
